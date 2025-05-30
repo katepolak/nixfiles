@@ -1,0 +1,7 @@
+keys:
+  - &katie age1d8yau97skn5ju4zu0q0ge9sa2s4xtqmcnvp7xtqy3u9vdaewcppqtyrhtq
+creation_rules:
+  - path_reges: secrets/secrets.yaml$
+    key_groups:
+    - age:
+      - *katie
