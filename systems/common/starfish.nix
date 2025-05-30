@@ -1,4 +1,4 @@
-{ config, lib, pkgs, sys, ...}: {
+{ config, lib, pkgs, ...}: {
 	programs.starship.settings = {
 		"$schema" = "https://starship.rs/config-schema.json";
 		add_newline = true;

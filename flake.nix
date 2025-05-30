@@ -18,6 +18,7 @@
 		wslSystem = {
 			host = "nixos";
 			user = "katie";
+			dotfilesDir = "nixos";
 			system = "x86_64-linux";
 		};
 	in {

@@ -1,0 +1,59 @@
+return {
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		opts = {
+			background = { -- :h background
+				light = "latte",
+				dark = "mocha",
+			},
+			-- transparent_background = true,
+			color_overrides = {
+				all = {
+					rosewater = "#CE5D97",
+					flamingo = "#A02F6F",
+					pink = "#8B7EC8",
+					mauve = "#5E409D",
+					red = "#D14D41",
+					maroon = "#AF3029",
+					peach = "#D0A215",
+					yellow = "#AD8301",
+					green = "#879A39",
+					teal = "#66800B",
+					sky = "#3AA99F",
+					sapphire = "#24837B",
+					blue = "#4385BE",
+					lavender = "#205EA6",
+				},
+				mocha = {
+					text = "#FFFCF0",
+					subtext1 = "#F2F0E5",
+					subtext0 = "#E6E4D9",
+					overlay2 = "#DAD8CE",
+					overlay1 = "#CECDC3",
+					overlay0 = "#B7B5AC",
+					surface2 = "#878580",
+					surface1 = "#6F6E69",
+					surface0 = "#575653",
+					base = "#100F0F",
+					mantle = "#1C1B1A",
+					crust = "#282726",
+				},
+				latte = {
+					text = "#100F0F",
+					subtext1 = "#1C1B1A",
+					subtext0 = "#282726",
+					overlay2 = "#343331",
+					overlay1 = "#403E3C",
+					overlay0 = "#575653",
+					surface2 = "#6F6E69",
+					surface1 = "#878580",
+					surface0 = "#B7B5AC",
+					base = "#FFFCF0",
+					mantle = "#F2F0E5",
+					crust = "#E6E4D9",
+				},
+			},
+		}
+	}
+}
