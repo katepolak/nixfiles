@@ -40,6 +40,7 @@
 			"$env_var"
 			"$custom"
 			"$sudo"
+			"$fill"
 			"$cmd_duration"
 			"$line_break"
 			"[](fg:trans_blue bg:bg)"
@@ -214,7 +215,7 @@
 		};
 		fill = {
 			style = "bold black";
-			symbol = ".";
+			symbol = " ";
 			disabled = false;
 		};
 		git_branch = {
@@ -332,7 +333,7 @@
 			detect_folders = ["lua"];
 		};
 		nix_shell = {
-			format     = "[$symbol$state( ($name))]($style) ";
+			format     = "[$symbol$state( ($name))]($style)  ";
 			disabled   = false;
 			impure_msg = "[impure](bold red)";
 			pure_msg   = "[pure](bold green)";
