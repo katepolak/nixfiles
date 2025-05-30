@@ -40,21 +40,30 @@
 	];
 	
 	home.shellAliases = {
+		cd       = "z";
 		v        = "nvim .";
 		find     = "fd";
 		l        = "eza --long --all --git --header --group-directories-first --sort name";
 		lt       = "eza --long --all --git --header --group-directories-first --tree --git-ignore --sort name --ignore-glob .git";
+
+		# FIXME: This should probably only be added in WSL instances ...
 		explorer = "/mnt/c/Windows/explorer.exe";
 	};
 
 	programs.fish = {
 		enable = true;
+
 		plugins = with pkgs.fishPlugins; [
 			{ name = "done"        ; src = done.src;         }
 			{ name = "forgit"      ; src = forgit.src;       }
 			{ name = "fzf-fish"    ; src = fzf-fish.src;     }
 			{ name = "grc"         ; src = grc.src;          }
 		];
+
+		shellAbbrs = {
+			gs = "git status";
+		};
+
 		interactiveShellInit = "starship init fish | source";
 	};
 
