@@ -1,7 +1,9 @@
 {
 	system.stateVersion = "24.05";
-	wsl.enable = true;
 
+	time.timeZone = "Europe/Prague";
+
+	wsl.enable = true;
 	wsl.defaultUser = "katie";
 
 	# With this on Windows PATH is added to WSL, which slows down anything
