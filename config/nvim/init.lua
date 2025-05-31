@@ -97,6 +97,4 @@ vim.o.timeoutlen = 300
 
 vim.o.termguicolors = true
 
---vim.cmd('colorscheme catppuccin-mocha')
-
---vim.opt.foldlevel = 99
+vim.opt.foldlevel = 99

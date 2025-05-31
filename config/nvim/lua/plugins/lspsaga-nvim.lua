@@ -1,5 +1,6 @@
 return {
 	"glepnir/lspsaga.nvim",
+	enabled = false,
 	dependencies = {
 		{"nvim-tree/nvim-web-devicons"},
 		{"nvim-treesitter/nvim-treesitter"}

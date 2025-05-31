@@ -32,6 +32,7 @@
 		go
 		nodejs
 		zig
+		typescript # also installs tsserver
 
 		# LSPs
 		gopls
