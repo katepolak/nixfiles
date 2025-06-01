@@ -15,7 +15,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({{ import = "plugins" }}, {
-	dev = {}
+	dev = {},
+	change_detection = {
+		enabled = true,
+		notify = false
+	}
 })
 
 -- Functional wrapper for mapping custom keybindings
