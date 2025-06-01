@@ -10,19 +10,20 @@ return {
 		vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 		vim.fn.sign_define('DiagnosticSignError',
-		{text = ' ', texthl = 'DiagnosticSignError'})
+		{text = '󰅙 ', texthl = 'DiagnosticSignError'})
 		vim.fn.sign_define('DiagnosticSignWarn',
 		{text = ' ', texthl = 'DiagnosticSignWarn'})
 		vim.fn.sign_define('DiagnosticSignInfo',
 		{text = ' ', texthl = 'DiagnosticSignInfo'})
 		vim.fn.sign_define('DiagnosticSignHint',
-		{text = '', texthl = 'DiagnosticSignHint'})
+		{text = ' ', texthl = 'DiagnosticSignHint'})
 
 		require('neo-tree').setup({
 			sources = {
 				"filesystem",
 			},
 			source_selector = {
+				truncation_character = ' ',
 				winbar = false,
 			},
 			close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
@@ -45,10 +46,12 @@ return {
 					expander_highlight = 'NeoTreeExpander',
 				},
 				icon = {
-					folder_closed = '',
-					folder_open = '',
-					folder_empty = 'ﰊ',
+					folder_closed = '',
+					folder_open = '',
+					folder_empty = '',
+					folder_empty_open = '',
 					default = '',
+
 				},
 				modified = {
 					symbol = '[+]',
@@ -61,16 +64,16 @@ return {
 				git_status = {
 					symbols = {
 						-- Change type
-						added     = '', -- or '✚', but this is redundant info if you use git_status_colors on the name
+						added     = ' ', -- or '✚', but this is redundant info if you use git_status_colors on the name
 						modified  = '', -- or '', but this is redundant info if you use git_status_colors on the name
-						deleted   = '✖',-- this can only be used in the git_status source
-						renamed   = '',-- this can only be used in the git_status source
+						deleted   = ' ',-- this can only be used in the git_status source
+						renamed   = ' ',-- this can only be used in the git_status source
 						-- Status type
-						untracked = '',
-						ignored   = '',
-						unstaged  = '󰄱',
-						staged    = '',
-						conflict  = '',
+						untracked = ' ',
+						ignored   = ' ',
+						unstaged  = '󰄱 ',
+						staged    = ' ',
+						conflict  = ' ',
 					}
 				},
 			},
@@ -101,7 +104,7 @@ return {
 			filesystem = {
 				filtered_items = {
 					visible = false, -- when true, they will just be displayed differently than normal items
-					hide_dotfiles = true,
+					hide_dotfiles = false,
 					hide_gitignored = true,
 					hide_by_name = {
 						'.DS_Store',
