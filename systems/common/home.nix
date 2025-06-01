@@ -1,6 +1,6 @@
 { config, lib, pkgs, sys, ...} : {
 	imports = [
-		./starfish.nix
+		./starship.nix
 	];
 
 	home.username = sys.user;

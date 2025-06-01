@@ -154,8 +154,8 @@
 			fish_style_pwd_dir_length = 0;
 			format = "[$path]($style)[$read_only]($read_only_style)";
 			home_symbol = "~";
-			read_only = " ";
-			read_only_style = "red";
+			read_only = "  ";
+			read_only_style = "fg:bg bg:trans_pink";
 			repo_root_format = "[$before_root_path]($style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) ";
 			style = "fg:bg bold bg:trans_pink";
 			truncate_to_repo = true;

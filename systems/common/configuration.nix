@@ -7,8 +7,10 @@
 
 	nixpkgs.config.allowUnfree = true;
 
-	# Used to fix a "bug" in sops-nix causing it to mkdir the ~/.ssh
+	# HACK: Used to fix a "bug" in sops-nix causing it to mkdir the ~/.ssh
 	# directory with root as owner, this runs chown to manually fix it
+	#
+	# https://github.com/Mic92/sops-nix/issues/381
 	systemd.services.fixSSHFolder = {
 		script = ''
 			chown ${config.users.users.${sys.user}.name} /home/${config.users.users.${sys.user}.name}/.ssh
