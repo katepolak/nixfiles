@@ -1,19 +1,6 @@
 return {
 	{
-		"folke/lazydev.nvim",
-		opts = {
-			library = {
-				-- See the configuration section for more details
-				-- Load luvit types when the `vim.uv` word is found
-				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-			},
-		},
-	},
-	{
 		"neovim/nvim-lspconfig",
-		dependencies = {
-			{ "j-hui/fidget.nvim", opts = {} },
-		},
 		config = function()
 
 			-- LSP settings.
@@ -39,5 +26,15 @@ return {
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("gopls")
 		end
-	}
+	},
+	{
+		"folke/lazydev.nvim",
+		opts = {
+			library = {
+				-- See the configuration section for more details
+				-- Load luvit types when the `vim.uv` word is found
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+			},
+		},
+	},
 }
