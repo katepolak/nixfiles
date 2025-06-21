@@ -30,6 +30,7 @@
 		# Languageas
 		gcc
 		go
+		dotnet-sdk_9
 		nodejs
 		zig
 		typescript # also installs tsserver
@@ -38,6 +39,8 @@
 		gopls
 		lua-language-server
 		nixd
+		roslyn-ls
+		zls
 	];
 	
 	home.shellAliases = {

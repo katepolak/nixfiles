@@ -25,7 +25,18 @@ return {
 			vim.lsp.enable("nixd")
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("gopls")
+			vim.lsp.enable('roslyn_ls')
+			vim.lsp.enable('zls')
 		end
+	},
+	{
+		"seblyng/roslyn.nvim",
+		ft = "cs",
+		---@module 'roslyn.config'
+		---@type RoslynNvimConfig
+		opts = {
+			-- your configuration comes here; leave empty for default settings
+		},
 	},
 	{
 		"folke/lazydev.nvim",
