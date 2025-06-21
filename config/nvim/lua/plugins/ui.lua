@@ -259,5 +259,19 @@ return {
 				-- refer to the configuration section below
 			}
 		}
+	},
+	{
+		"chrisgrieser/nvim-origami",
+		event = "VeryLazy",
+		opts = {
+
+		},
+		init = function ()
+			vim.opt.foldlevel = 99
+			vim.opt.foldlevelstart = 99
+
+			vim.opt.foldmethod = "expr"
+			-- vim.opt.foldexpr = "v:lua.vim.lsp.foldexpr()"
+		end
 	}
 }

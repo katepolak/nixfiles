@@ -17,5 +17,3 @@ vim.o.timeoutlen = 300
 vim.o.termguicolors = true
 
 vim.o.cursorline = true
-
-vim.opt.foldlevel = 99

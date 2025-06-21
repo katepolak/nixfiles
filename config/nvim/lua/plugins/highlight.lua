@@ -24,13 +24,12 @@ return {
 					"c_sharp",
 					"go",
 					"lua",
+					"zig",
+					"nix",
 					"markdown",
 					"markdown_inline"
 				}
 			}
-
-			vim.cmd("set foldmethod=expr")
-			vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
 		end
 	},
 	{

@@ -1,6 +1,3 @@
-vim.g.mapleader      = " "
-vim.g.maplocalleader = " "
-
 -- Navigation keybinds ----------------------------------------------------------------------------
 vim.keymap.set('n', 'H',     '<Home>')
 vim.keymap.set('n', 'J',     '<PageDown>')
